@@ -1,3 +1,5 @@
+$color-bronze: #e0b48d;
+
 .wrapper {
   box-sizing: border-box;
   line-height: 1.42857143;
@@ -22,7 +24,7 @@
 }
 
 .bronze {
-  border-color: #e0b48d;
+  border-color: $color-bronze;
 }
 
 .h3 {
@@ -31,7 +33,7 @@
   margin-top: 0;
   font-size: 33px;
   font-weight: 700;
-  color: #e0b48d;
+  color: $color-bronze;
 }
 
 .p {
@@ -46,7 +48,7 @@
   float: right;
   font-size: 28px;
   font-weight: 600;
-  color: #e0b48d;
+  color: $color-bronze;
 }
 
 .ul {
@@ -60,17 +62,17 @@
   padding: 13px 0;
 }
 
-.li-sub-menu {
+.liSubMenu {
   font-size: 13px;
   font-weight: 500;
   padding: 13px 0 2px 15px;
 }
 
-.select-box {
+.selectBox {
   text-align: center;
   padding: 0;
-  border: 2px solid #e0b48d;
-  background: #e0b48d;
+  border: 2px solid $color-bronze;
+  background: $color-bronze;
   color: #fff;
   display: block;
   font-weight: 700;
@@ -84,10 +86,10 @@
   content: "v ";
 }
 
-.border-bottom {
+.borderBottom {
   border-bottom: 2px solid #ddd;
 }
 
-.border-top {
+.borderTop {
   border-top: 2px solid #ddd;
 }
