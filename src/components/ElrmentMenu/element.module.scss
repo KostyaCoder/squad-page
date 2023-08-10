@@ -1,7 +1,7 @@
+@import "../../common/styles/_template.scss";
+
 .li {
-  font-size: 15px;
-  font-weight: 500;
-  padding: 13px 0;
+  @extend %li;
 }
 
 .borderBottom {

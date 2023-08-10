@@ -1,4 +1,8 @@
-@import "../../common/styles/variables";
+@import "../../common/styles/_template.scss";
+
+.li {
+  @extend %li;
+}
 
 .selectBox {
   text-align: center;
