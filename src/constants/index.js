@@ -3,4 +3,5 @@ export default {
   GOLD: "gold",
   PLATINUM: "platinum",
   MANAGED: "managed",
+  BLACK: "black"
 };

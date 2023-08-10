@@ -13,6 +13,9 @@ export default function ButtonMenu(props) {
     [style.li]: true,
     [style.selectBox]: true,
     [styleColor.buttonBronze]: colorMenu === CONSTANTS.BRONZE,
+    [styleColor.buttonGold]: colorMenu === CONSTANTS.GOLD,
+    [styleColor.buttonPlatinum]: colorMenu === CONSTANTS.PLATINUM,
+    [styleColor.buttonManaged]: colorMenu === CONSTANTS.MANAGED,
   });
 
   return (

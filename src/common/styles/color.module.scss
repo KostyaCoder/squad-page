@@ -1,5 +1,6 @@
 @import "./variables";
 
+//Bronze
 .borderBronze {
   border: 10px solid $color-bronze;
 }
@@ -11,4 +12,46 @@
 .buttonBronze{
   border: 2px solid $color-bronze;
   background: $color-bronze;
+}
+
+//Gold
+.borderGold {
+  border: 10px solid $color-gold;
+}
+
+.colorGold {
+  color: $color-gold;
+}
+
+.buttonGold{
+  border: 2px solid $color-gold;
+  background: $color-gold;
+}
+
+//Platinum
+.borderPlatinum {
+  border: 10px solid $color-platinum;
+}
+
+.colorPlatinum {
+  color: $color-platinum;
+}
+
+.buttonPlatinum{
+  border: 2px solid $color-platinum;
+  background: $color-platinum;
+}
+
+//Managed
+.borderManaged {
+  border: 10px solid $color-managed;
+}
+
+.colorManaged {
+  color: $color-managed;
+}
+
+.buttonManaged{
+  border: 2px solid $color-managed;
+  background: $color-managed;
 }

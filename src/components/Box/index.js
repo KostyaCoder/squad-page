@@ -14,22 +14,44 @@ export default function Box(props) {
     },
   } = props;
   const colorMenu = useContext(ColorContext);
+  const { classNameBox, classNameTitle, classNamePrice } = getClassNames(
+    colorMenu,
+    colorPrice
+  );
 
+  return (
+    <div className={classNameBox}>
+      <h3 className={classNameTitle}>{boxTitle}</h3>
+      <p className={style.textTitle}>{textTitle}</p>
+      <span className={classNamePrice}>{textPrice}</span>
+    </div>
+  );
+}
+
+function getClassNames(colorMenu, colorPrice) {
   const classNameBox = classNames({
     [style.box]: true,
     [styleColor.borderBronze]: colorMenu === CONSTANTS.BRONZE,
+    [styleColor.borderGold]: colorMenu === CONSTANTS.GOLD,
+    [styleColor.borderPlatinum]: colorMenu === CONSTANTS.PLATINUM,
+    [styleColor.borderManaged]: colorMenu === CONSTANTS.MANAGED,
+  });
+
+  const classNameTitle = classNames({
+    [style.boxTitle]: true,
+    [styleColor.colorBronze]: colorMenu === CONSTANTS.BRONZE,
+    [styleColor.colorGold]: colorMenu === CONSTANTS.GOLD,
+    [styleColor.colorPlatinum]: colorMenu === CONSTANTS.PLATINUM,
+    [styleColor.colorManaged]: colorMenu === CONSTANTS.MANAGED,
   });
 
   const classNamePrice = classNames({
     [style.price]: true,
     [styleColor.colorBronze]: colorPrice === CONSTANTS.BRONZE,
+    [styleColor.colorGold]: colorPrice === CONSTANTS.GOLD,
+    [styleColor.colorPlatinum]: colorPrice === CONSTANTS.PLATINUM,
+    [styleColor.colorManaged]: colorPrice === CONSTANTS.MANAGED,
+    [styleColor.colorBlack]: colorPrice === CONSTANTS.BLACK,
   });
-
-  return (
-    <div className={classNameBox}>
-      <h3 className={style.boxTitle}>{boxTitle}</h3>
-      <p className={style.textTitle}>{textTitle}</p>
-      <span className={classNamePrice}>{textPrice}</span>
-    </div>
-  );
+  return { classNameBox, classNameTitle, classNamePrice };
 }
