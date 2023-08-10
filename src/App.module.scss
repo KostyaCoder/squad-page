@@ -27,7 +27,7 @@ $color-bronze: #e0b48d;
   border-color: $color-bronze;
 }
 
-.h3 {
+.boxTitle {
   line-height: 1.1;
   margin-bottom: 10px;
   margin-top: 0;
@@ -36,7 +36,7 @@ $color-bronze: #e0b48d;
   color: $color-bronze;
 }
 
-.p {
+.textTitle {
   color: #666;
   font-size: 16px;
   font-weight: 500;
@@ -62,7 +62,7 @@ $color-bronze: #e0b48d;
   padding: 13px 0;
 }
 
-.liSubMenu {
+.subMenu {
   font-size: 13px;
   font-weight: 500;
   padding: 13px 0 2px 15px;
