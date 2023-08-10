@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import style from "../../App.module.scss";
+import style from "./element.module.scss";
 
 export default function ElementMenu(props) {
   const { elementData } = props;

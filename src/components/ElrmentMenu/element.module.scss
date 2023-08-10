@@ -1,0 +1,23 @@
+.li {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 13px 0;
+}
+
+.borderBottom {
+  border-bottom: 2px solid #ddd;
+}
+
+.borderTop {
+  border-top: 2px solid #ddd;
+}
+
+.subMenu {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 13px 0 2px 15px;
+}
+
+.check::before {
+  content: "v ";
+}
