@@ -1,4 +1,5 @@
-import style from "../../App.module.scss";
+import style from "./box.module.scss";
+import styleColor from "../../common/styles/color.module.scss";
 import classNames from "classnames";
 import CONSTANTS from "../../constants";
 
@@ -8,19 +9,25 @@ export default function Box(props) {
       colorMenu,
       boxTitle,
       textTitle,
-      price: { text: textPrice },
+      price: { text: textPrice, color: colorPrice },
     },
   } = props;
 
-  const classNameColor = classNames({
-    [style.bronze]: colorMenu === CONSTANTS.BRONZE,
+  const classNameBox = classNames({
+    [style.box]: true,
+    [styleColor.borderBronze]: colorMenu === CONSTANTS.BRONZE,
+  });
+
+  const classNamePrice = classNames({
+    [style.price]: true,
+    [styleColor.colorBronze]: colorPrice === CONSTANTS.BRONZE,
   });
 
   return (
-    <div className={`${style.box} ${classNameColor}`}>
+    <div className={classNameBox}>
       <h3 className={style.boxTitle}>{boxTitle}</h3>
       <p className={style.textTitle}>{textTitle}</p>
-      <span className={style.price}>{textPrice}</span>
+      <span className={classNamePrice}>{textPrice}</span>
     </div>
   );
 }
