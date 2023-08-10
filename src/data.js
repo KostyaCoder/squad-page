@@ -1,12 +1,12 @@
-import constants from "./constants";
+import CONSTANTS from "./constants";
 
 const data = [
   {
     boxData: {
-      colorMenu: constants.BRONZE,
+      colorMenu: CONSTANTS.BRONZE,
       boxTitle: "Bronze",
       textTitle: "Branding on a budget",
-      price: { color: constants.BRONZE, text: "US$299" },
+      price: { color: CONSTANTS.BRONZE, text: "US$299" },
     },
     hrefSelectBox: "/start-contest?type=1&amp;step=2",
     listMenuData: [
