@@ -2,16 +2,18 @@ import style from "./box.module.scss";
 import styleColor from "../../common/styles/color.module.scss";
 import classNames from "classnames";
 import CONSTANTS from "../../constants";
+import { useContext } from "react";
+import { ColorContext } from "../../contexts";
 
 export default function Box(props) {
   const {
     boxData: {
-      colorMenu,
       boxTitle,
       textTitle,
       price: { text: textPrice, color: colorPrice },
     },
   } = props;
+  const colorMenu = useContext(ColorContext);
 
   const classNameBox = classNames({
     [style.box]: true,
