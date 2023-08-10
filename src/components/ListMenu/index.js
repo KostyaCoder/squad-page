@@ -1,4 +1,4 @@
-import style from "../../App.module.scss";
+import style from "./listMenu.module.scss";
 import ElementMenu from "../ElrmentMenu";
 import ButtonMenu from "../../components/ButtonMenu";
 
