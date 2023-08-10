@@ -1,5 +1,9 @@
-$color-bronze: #e0b48d;
+@import "./variables";
 
-.bronze {
+.borderBronze {
+  border: 10px solid $color-bronze;
+}
+
+.colorBronze {
   border-color: $color-bronze;
 }
