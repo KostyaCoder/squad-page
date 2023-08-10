@@ -4,7 +4,12 @@ import CONSTANTS from "../../constants";
 
 export default function Box(props) {
   const {
-    boxData: { colorMenu, boxTitle, textTitle, textPrice },
+    boxData: {
+      colorMenu,
+      boxTitle,
+      textTitle,
+      price: { text: textPrice },
+    },
   } = props;
 
   const classNameColor = classNames({
