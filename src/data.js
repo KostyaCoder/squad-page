@@ -2,10 +2,12 @@ import constants from "./constants";
 
 const data = [
   {
-    colorMenu: constants.BRONZE,
-    boxTitle: "Bronze",
-    textTitle: "Branding on a budget",
-    price: { color: constants.BRONZE, text: "US$299" },
+    boxData: {
+      colorMenu: constants.BRONZE,
+      boxTitle: "Bronze",
+      textTitle: "Branding on a budget",
+      price: { color: constants.BRONZE, text: "US$299" },
+    },
     hrefSelectBox: "/start-contest?type=1&amp;step=2",
     listMenuData: [
       {
@@ -85,7 +87,7 @@ const data = [
       //   },
       // },
     ],
-  }
+  },
 ];
 
 export default data;
