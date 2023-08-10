@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import style from "../../App.module.scss";
+import ButtonMenu from "../../components/ButtonMenu";
 
 export default function ListMenu(props) {
   const {listMenuData, hrefSelectBox} = props;
@@ -26,14 +27,9 @@ export default function ListMenu(props) {
   });
 
   return (
-    <>
-      <ul className={style.ul}>{returnComponent}</ul>
-      <li className={`${style.li} ${style.selectBox}`}>
-        <a className={style.selectBox} href={hrefSelectBox}>
-          <i className={style.check}></i>
-          <span>Start</span>
-        </a>
-      </li>
-    </>
+    <ul className={style.ul}>
+      {returnComponent}
+      <ButtonMenu hrefSelectBox={hrefSelectBox} />
+    </ul>
   );
 }
