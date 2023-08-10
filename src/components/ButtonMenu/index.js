@@ -1,4 +1,4 @@
-import style from "../../App.module.scss";
+import style from "./button.module.scss";
 
 export default function ButtonMenu(props) {
   const { hrefSelectBox } = props;

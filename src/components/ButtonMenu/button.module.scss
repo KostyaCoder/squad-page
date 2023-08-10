@@ -1,0 +1,19 @@
+@import "../../common/styles/variables";
+
+.selectBox {
+  text-align: center;
+  padding: 0;
+  border: 2px solid $color-bronze;
+  background: $color-bronze;
+  color: #fff;
+  display: block;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 45px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.check::before {
+  content: "v ";
+}
