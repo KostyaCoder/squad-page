@@ -2,7 +2,7 @@ import classNames from "classnames";
 import style from "../../App.module.scss";
 
 export default function ElementMenu(props) {
-  const { keyElement: key, elementData } = props;
+  const { elementData } = props;
 
   const {
     dataContent,
@@ -19,7 +19,7 @@ export default function ElementMenu(props) {
   });
 
   return (
-    <li key={key} data-content={dataContent} className={`${classNameMenu}`}>
+    <li data-content={dataContent} className={`${classNameMenu}`}>
       {check && <i className={style.check}></i>} {textMenu}
     </li>
   );

@@ -6,7 +6,7 @@ export default function ListMenu(props) {
   const { listMenuData, hrefSelectBox } = props;
 
   const menu = listMenuData.map((elem, i) => {
-    return <ElementMenu keyElement={i} elementData={elem} />;
+    return <ElementMenu key={i} elementData={elem} />;
   });
 
   return (
