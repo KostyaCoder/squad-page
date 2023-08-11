@@ -1,10 +1,18 @@
 .wrapper {
+  box-sizing: border-box;
   line-height: 1.43;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
   padding: 60px 15px;
   cursor: pointer;
-  opacity: 0.9;
   width: 25%;
   float: left;
+}
+
+.wrapper:hover * {
+  opacity: 1;
+}
+
+.wrapper:hover > div {
+  box-shadow: -5px 5px 10px grey;
 }
