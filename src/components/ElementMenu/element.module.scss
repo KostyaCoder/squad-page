@@ -9,13 +9,12 @@
 }
 
 .borderTop {
+  margin-top: 15px;
   border-top: 2px solid #ddd;
 }
 
 .subMenu {
-  font-size: 13px;
-  font-weight: 500;
-  padding: 13px 0 2px 15px;
+  @extend %subMenu;
 }
 
 .check::before {
