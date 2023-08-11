@@ -2,14 +2,14 @@ import classNames from "classnames";
 import style from "./element.module.scss";
 
 export default function ElementMenu(props) {
-  const { elementData } = props;
-
   const {
-    dataContent,
-    textMenu,
-    check,
-    classNames: { borderBottom, borderTop, subMenu },
-  } = elementData;
+    elementData: {
+      dataContent,
+      textMenu,
+      check,
+      classNames: { borderBottom, borderTop, subMenu },
+    },
+  } = props;
 
   const classNameMenu = classNames({
     [style.li]: true,
