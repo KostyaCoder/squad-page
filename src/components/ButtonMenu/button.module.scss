@@ -17,5 +17,5 @@
 }
 
 .check::before {
-  content: "v ";
+  @extend %check;
 }
