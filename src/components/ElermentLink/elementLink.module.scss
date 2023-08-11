@@ -1,0 +1,22 @@
+@import "../../common/styles/_template.scss";
+
+.aDecoration {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.paddingTopNone {
+  padding-top: 0;
+}
+
+.paddingNone {
+  padding: 0;
+}
+
+.subMenu {
+  @extend %subMenu;
+}
+
+.li {
+  @extend %li;
+}
